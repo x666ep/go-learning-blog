@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package go_learning_blog.api.go_learning_blog.v1;
 
-option go_package = "github.com/x666ep/go-learning-blog/pkg/go-learning-blog-api";
+option go_package = "github.com/x666ep/go-learning-blog/pkg/api/go-learning-blog/v1";
 
 import "google/api/annotations.proto";
 
