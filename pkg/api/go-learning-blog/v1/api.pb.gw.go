@@ -2,11 +2,11 @@
 // source: api/go-learning-blog/v1/api.proto
 
 /*
-Package go_learning_blog_api is a reverse proxy.
+Package v1 is a reverse proxy.
 
 It translates gRPC into RESTful JSON APIs.
 */
-package go_learning_blog_api
+package v1
 
 import (
 	"context"

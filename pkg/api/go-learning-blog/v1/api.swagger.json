@@ -68,12 +68,23 @@
       }
     },
     "v1Post": {
-      "type": "object"
+      "type": "object",
+      "properties": {
+        "head": {
+          "type": "string"
+        },
+        "body": {
+          "type": "string"
+        },
+        "author": {
+          "type": "string"
+        }
+      }
     },
     "v1Posts": {
       "type": "object",
       "properties": {
-        "post": {
+        "posts": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/v1Post"
