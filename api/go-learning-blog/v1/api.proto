@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+package go_learning_blog.api.go_learning_blog.v1;
+
+option go_package = "github.com/x666ep/go-learning-blog/pkg/go-learning-blog-api";
+
+import "google/api/annotations.proto";
+
+service GoLearningBlogService {
+    rpc GetPosts (Empty) returns (Posts) {
+        option (google.api.http) = {
+            get: "/blog/posts"
+        };
+    };
+    // rpc GetPost (Request) returns (Response);
+    // rpc CreatePost (Request) returns (Response);
+    // rpc EditPost (Request) returns (Response);
+    // rpc RemovePost (Request) returns (Response);
+    // rpc GetComments (Request) returns (Response);
+    // rpc AddComment (Request) returns (Response);
+    // rpc EditComment (Request) returns (Response);
+    // rpc RemoveComment (Request) returns (Response);
+};
+
+message Comment {
+
+};
+
+message Comments {
+    repeated Comment comments = 1;
+};
+
+message Post {
+
+};
+
+message Posts {
+    repeated Post post = 1;
+};
+
+
+message Empty {
+};
